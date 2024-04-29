@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-04-28 22:21:11.466533",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_xgswp",
+  "date_of_issue",
+  "section_break_tihtw",
+  "bgroupb",
+  "chairperson",
+  "memory_text",
+  "column_break_x6nbv",
+  "promotion_talk",
+  "foreign_talk",
+  "teacher_of_teachers_section",
+  "teacher_of_teachers",
+  "column_break_yuzl1",
+  "choir",
+  "section_break_3ji6i",
+  "other"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SSA-.##.DD.MM.YY.-"
+  },
+  {
+   "fieldname": "column_break_xgswp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "section_break_tihtw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chairperson",
+   "fieldtype": "Data",
+   "label": "Chairperson"
+  },
+  {
+   "fieldname": "memory_text",
+   "fieldtype": "Data",
+   "label": "Memory Text"
+  },
+  {
+   "fieldname": "column_break_x6nbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "promotion_talk",
+   "fieldtype": "Data",
+   "label": "Promotion Talk"
+  },
+  {
+   "fieldname": "foreign_talk",
+   "fieldtype": "Data",
+   "label": "Foreign Talk"
+  },
+  {
+   "fieldname": "teacher_of_teachers_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "teacher_of_teachers",
+   "fieldtype": "Data",
+   "label": "<b>Teacher of Teachers</b>"
+  },
+  {
+   "fieldname": "choir",
+   "fieldtype": "Data",
+   "label": "<b>Choir</b>"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Text Editor",
+   "label": "Other"
+  },
+  {
+   "fieldname": "column_break_yuzl1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_3ji6i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bgroupb",
+   "fieldtype": "Data",
+   "label": "<b>Group</b>"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-28 22:25:15.452056",
+ "modified_by": "Administrator",
+ "module": "Sabbath School",
+ "name": "SS Annoncements",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

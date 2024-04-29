@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-04-28 23:04:10.639799",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_d5hsr",
+  "date_of_issue",
+  "section_break_zzgnc",
+  "bhuduma_yangu_kwa_yesub",
+  "bhuduma_kwa_jamiib",
+  "busomaji_wa_lessoni_na_bibliab"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "SSA-.##.DD.MM.YY.-"
+  },
+  {
+   "fieldname": "column_break_d5hsr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "section_break_zzgnc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bhuduma_yangu_kwa_yesub",
+   "fieldtype": "Table",
+   "label": "<b>Huduma yangu kwa Yesu</b>",
+   "options": "SS Card Description"
+  },
+  {
+   "fieldname": "bhuduma_kwa_jamiib",
+   "fieldtype": "Table",
+   "label": "<b>Huduma kwa Jamii</b>",
+   "options": "SS Card Description"
+  },
+  {
+   "fieldname": "busomaji_wa_lessoni_na_bibliab",
+   "fieldtype": "Table",
+   "label": "<b>Usomaji wa Lessoni na Biblia</b>",
+   "options": "SS Card Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-28 23:04:10.639799",
+ "modified_by": "Administrator",
+ "module": "Sabbath School",
+ "name": "SS Card",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

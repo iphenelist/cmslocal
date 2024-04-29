@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-10 15:58:23.898365",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "full_name",
+  "column_break_ivuzj",
+  "account",
+  "section_break_opr5p",
+  "tithes",
+  "offering",
+  "column_break_o5yuq",
+  "thanks_offering",
+  "campmeeting_offering",
+  "total_offering_section",
+  "total_offering",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member",
+   "unique": 1
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ivuzj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_break_opr5p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tithes",
+   "fieldtype": "Currency",
+   "label": "Tithes"
+  },
+  {
+   "fieldname": "offering",
+   "fieldtype": "Currency",
+   "label": "Offering"
+  },
+  {
+   "fieldname": "column_break_o5yuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thanks_offering",
+   "fieldtype": "Data",
+   "label": "Thanks Offering"
+  },
+  {
+   "fieldname": "campmeeting_offering",
+   "fieldtype": "Data",
+   "label": "Campmeeting Offering"
+  },
+  {
+   "fieldname": "total_offering_section",
+   "fieldtype": "Section Break",
+   "label": "Total Offering",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_offering",
+   "fieldtype": "Currency"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Offfering",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-28 21:18:10.825282",
+ "modified_by": "Administrator",
+ "module": "Tresurer",
+ "name": "Offfering",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "member",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member"
+}

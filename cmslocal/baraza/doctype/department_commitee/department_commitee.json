@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-11 15:04:03.134144",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "departmen",
+  "column_break_vzllt",
+  "department_name",
+  "section_break_tr1kn",
+  "member_info"
+ ],
+ "fields": [
+  {
+   "fieldname": "departmen",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Church Department"
+  },
+  {
+   "fieldname": "column_break_vzllt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "departmen.department_name",
+   "fieldname": "department_name",
+   "fieldtype": "Data",
+   "label": "Department Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_tr1kn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "member_info",
+   "fieldtype": "Table",
+   "label": "Member Info",
+   "options": "Department Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-28 21:17:22.000134",
+ "modified_by": "Administrator",
+ "module": "Baraza",
+ "name": "Department Commitee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "department_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "department_name"
+}

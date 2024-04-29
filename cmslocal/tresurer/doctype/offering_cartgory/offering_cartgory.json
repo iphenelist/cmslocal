@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-10 16:13:18.201512",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category_name",
+  "percentage_conference",
+  "percentage_church"
+ ],
+ "fields": [
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "label": " Category Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "percentage_conference",
+   "fieldtype": "Percent",
+   "label": " Percentage Conference"
+  },
+  {
+   "fieldname": "percentage_church",
+   "fieldtype": "Percent",
+   "label": " Percentage Church"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-28 21:18:23.741824",
+ "modified_by": "Administrator",
+ "module": "Tresurer",
+ "name": "Offering Cartgory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "category_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "category_name"
+}
