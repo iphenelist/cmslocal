@@ -18,8 +18,9 @@
  ],
  "fields": [
   {
+   "default": "0",
    "fieldname": "naming_series",
-   "fieldtype": "Data",
+   "fieldtype": "Check",
    "label": "Naming Series",
    "options": "SSA-.##.DD.MM.YY.-"
   },
@@ -57,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-28 23:04:10.639799",
+ "modified": "2024-05-12 07:46:50.780711",
  "modified_by": "Administrator",
  "module": "Sabbath School",
  "name": "SS Card",
