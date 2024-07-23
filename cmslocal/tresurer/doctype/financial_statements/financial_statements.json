@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2024-07-23 22:32:33.688932",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,6 +10,7 @@
   "amended_from",
   "period",
   "cash_flow_statement",
+  "naming_series",
   "column_break_dcyh",
   "income_statement",
   "balance_sheet"
@@ -52,15 +54,22 @@
    "fieldname": "balance_sheet",
    "fieldtype": "Text",
    "label": "Balance Sheet"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "FS-.YYYY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-23 22:38:04.946007",
+ "modified": "2024-07-24 00:04:05.804701",
  "modified_by": "Administrator",
  "module": "Tresurer",
  "name": "Financial Statements",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

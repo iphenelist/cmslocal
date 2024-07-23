@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2024-07-16 22:49:32.796382",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,7 +14,8 @@
   "column_break_febq",
   "debit_account",
   "credit_account",
-  "description"
+  "description",
+  "naming_series"
  ],
  "fields": [
   {
@@ -66,15 +68,22 @@
    "fieldtype": "Link",
    "label": "Credit Account",
    "options": "Account"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "ACC-JE-.YYYY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-23 23:22:24.779321",
+ "modified": "2024-07-23 23:59:06.584470",
  "modified_by": "Administrator",
  "module": "Tresurer",
  "name": "Journal Entry",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
