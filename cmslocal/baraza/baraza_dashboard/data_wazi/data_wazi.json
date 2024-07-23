@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "washiriki",
+   "width": "Full"
+  }
+ ],
+ "creation": "2024-07-16 00:33:34.625510",
+ "dashboard_name": "Data wazi",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-07-16 00:33:34.625510",
+ "modified_by": "Administrator",
+ "module": "Baraza",
+ "name": "Data wazi",
+ "owner": "Administrator"
+}
