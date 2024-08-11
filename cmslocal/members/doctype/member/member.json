@@ -2,53 +2,47 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2024-04-10 15:48:27.345164",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "membership",
-  "column_break_pgivh",
-  "membership_type",
   "section_break_c78pl",
   "full_name",
+  "dob",
+  "age",
   "baptismal_date",
   "column_break_c8lrp",
   "phone_number",
   "address",
-  "amended_from"
+  "amended_from",
+  "membership_type_section",
+  "membership_type",
+  "column_break_ovok",
+  "naming_series"
  ],
  "fields": [
   {
-   "fieldname": "membership",
-   "fieldtype": "Link",
-   "label": "Membership",
-   "options": "Membership Type"
-  },
-  {
-   "fieldname": "column_break_pgivh",
-   "fieldtype": "Column Break"
-  },
-  {
    "fetch_from": "membership.membership",
    "fieldname": "membership_type",
-   "fieldtype": "Data",
-   "label": "Membership Type"
+   "fieldtype": "Link",
+   "label": "Membership Type",
+   "options": "Membership Type",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_c78pl",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Basic Infomations"
   },
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
-  },
-  {
-   "fieldname": "baptismal_date",
-   "fieldtype": "Date",
-   "label": "Baptismal Date"
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_c8lrp",
@@ -57,12 +51,16 @@
   {
    "fieldname": "phone_number",
    "fieldtype": "Int",
-   "label": "Phone Number"
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
   },
   {
    "fieldname": "address",
    "fieldtype": "Data",
-   "label": "Address"
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
   },
   {
    "fieldname": "amended_from",
@@ -73,15 +71,49 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "membership_type_section",
+   "fieldtype": "Section Break",
+   "label": "Membership Type"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ovok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "MBR-NO-"
+  },
+  {
+   "fieldname": "baptismal_date",
+   "fieldtype": "Date",
+   "label": "Baptismal Date (optional)"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-28 21:14:12.651461",
+ "modified": "2024-08-11 09:34:25.784433",
  "modified_by": "Administrator",
  "module": "Members",
  "name": "Member",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

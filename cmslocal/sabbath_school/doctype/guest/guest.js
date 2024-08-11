@@ -2,7 +2,16 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Guest', {
-	// refresh: function(frm) {
+	refresh(frm) {
+		frm.set_query('attended_by',
+			function() {
+				return{
+					filters: {
+						membership_type: ['in', 'Mshiriki wa kanisa']
+					}
+				}
+			}
+		)
 
-	// }
+	}
 });

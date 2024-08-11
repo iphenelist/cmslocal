@@ -2,7 +2,16 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('SS Class', {
-	// refresh: function(frm) {
+	refresh(frm) {
+		frm.set_query('member', 'class_members',
+			function() {
+				return{
+					filters: {
+						address: frm.doc.address
+					}
+				}
+			}
+		)
 
-	// }
+	}
 });

@@ -9,6 +9,8 @@
  "engine": "InnoDB",
  "field_order": [
   "class_name",
+  "column_break_vxbg",
+  "address",
   "section_break_olupd",
   "class_members",
   "amended_from"
@@ -28,7 +30,7 @@
    "fieldname": "class_members",
    "fieldtype": "Table",
    "label": "Class Members",
-   "options": "SS Class Table"
+   "options": "SS Class Details"
   },
   {
    "fieldname": "amended_from",
@@ -39,12 +41,22 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "column_break_vxbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Local Address"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-28 22:33:13.710681",
+ "modified": "2024-08-11 09:07:28.016631",
  "modified_by": "Administrator",
  "module": "Sabbath School",
  "name": "SS Class",

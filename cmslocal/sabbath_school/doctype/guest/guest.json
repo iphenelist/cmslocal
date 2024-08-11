@@ -18,7 +18,7 @@
   {
    "fieldname": "date_of_issue",
    "fieldtype": "Date",
-   "label": "Date Of Issue"
+   "label": "Date of issue"
   },
   {
    "fieldname": "attended_by",
@@ -31,7 +31,7 @@
    "fieldname": "guests",
    "fieldtype": "Table",
    "label": "Guests",
-   "options": "Guest Table"
+   "options": "Guest Details"
   },
   {
    "fieldname": "column_break_s59tf",
@@ -44,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-28 21:55:30.828413",
+ "modified": "2024-08-11 09:38:22.352072",
  "modified_by": "Administrator",
  "module": "Sabbath School",
  "name": "Guest",

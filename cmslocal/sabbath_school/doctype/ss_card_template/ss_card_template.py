@@ -1,9 +1,9 @@
 # Copyright (c) 2024, Innocent PM and contributors
 # For license information, please see license.txt
 
-import frappe
-from frappe.utils.nestedset import NestedSet
+# import frappe
+from frappe.model.document import Document
 
 
-class Account(NestedSet):
-    pass
+class SSCardTemplate(Document):
+	pass

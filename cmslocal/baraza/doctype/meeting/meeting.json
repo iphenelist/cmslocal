@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-11 13:46:10.007875",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_kn7h",
+  "meeting_date",
+  "amended_from",
+  "column_break_zrqx",
+  "meeting_time",
+  "section_break_pyeg",
+  "agenda",
+  "meeting_invitation_section",
+  "invite",
+  "year",
+  "invited_member"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kn7h",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Meeting",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "column_break_zrqx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_time",
+   "fieldtype": "Time",
+   "label": "Meeting Time"
+  },
+  {
+   "fieldname": "section_break_pyeg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Text Editor",
+   "label": "Agenda"
+  },
+  {
+   "fieldname": "meeting_invitation_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Invitation"
+  },
+  {
+   "default": "0",
+   "fieldname": "invite",
+   "fieldtype": "Check",
+   "label": "Invite"
+  },
+  {
+   "fieldname": "invited_member",
+   "fieldtype": "Table",
+   "label": "Invited Member",
+   "options": "Baraza Member Details"
+  },
+  {
+   "depends_on": "eval:doc.invite === 1",
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "label": "Year",
+   "options": "Baraza Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-11 14:45:42.244339",
+ "modified_by": "Administrator",
+ "module": "Baraza",
+ "name": "Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

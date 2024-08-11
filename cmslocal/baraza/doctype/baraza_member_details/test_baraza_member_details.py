@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestSSCardDescriptions(FrappeTestCase):
+class TestBarazaMemberDetails(FrappeTestCase):
 	pass

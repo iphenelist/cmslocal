@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:department_name",
  "creation": "2024-04-10 15:55:38.623763",
  "default_view": "List",
  "doctype": "DocType",
@@ -15,7 +16,8 @@
   {
    "fieldname": "department_name",
    "fieldtype": "Data",
-   "label": "Department Name"
+   "label": "Department Name",
+   "unique": 1
   },
   {
    "fieldname": "budget",
@@ -30,10 +32,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-28 21:17:50.632723",
+ "modified": "2024-08-11 14:14:31.360083",
  "modified_by": "Administrator",
  "module": "Baraza",
  "name": "Church Department",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

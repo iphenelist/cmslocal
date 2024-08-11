@@ -11,17 +11,18 @@
   "naming_series",
   "column_break_xgswp",
   "date_of_issue",
-  "section_break_tihtw",
-  "bgroupb",
-  "chairperson",
-  "memory_text",
-  "column_break_x6nbv",
-  "promotion_talk",
-  "foreign_talk",
   "teacher_of_teachers_section",
   "teacher_of_teachers",
   "column_break_yuzl1",
   "choir",
+  "section_break_tihtw",
+  "group",
+  "chairperson",
+  "memory_text",
+  "column_break_x6nbv",
+  "group_name",
+  "promotion_talk",
+  "foreign_talk",
   "section_break_3ji6i",
   "other"
  ],
@@ -30,7 +31,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series",
-   "options": "SSA-.##.DD.MM.YY.-"
+   "options": "SSA-.DD.MM.YY.-"
   },
   {
    "fieldname": "column_break_xgswp",
@@ -67,7 +68,7 @@
   {
    "fieldname": "foreign_talk",
    "fieldtype": "Data",
-   "label": "Foreign Talk"
+   "label": "Inspiration Talk"
   },
   {
    "fieldname": "teacher_of_teachers_section",
@@ -97,14 +98,21 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "bgroupb",
-   "fieldtype": "Data",
+   "default": "0",
+   "fieldname": "group",
+   "fieldtype": "Check",
    "label": "<b>Group</b>"
+  },
+  {
+   "depends_on": "eval:doc.group === 1",
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "label": "Group Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-28 22:25:15.452056",
+ "modified": "2024-08-11 10:54:38.772656",
  "modified_by": "Administrator",
  "module": "Sabbath School",
  "name": "SS Annoncements",

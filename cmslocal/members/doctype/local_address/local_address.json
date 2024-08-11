@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:address_title",
+ "creation": "2024-08-11 08:56:57.124663",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "address_title",
+  "ward",
+  "district",
+  "town",
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "address_title",
+   "fieldtype": "Data",
+   "label": "Address Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Data",
+   "label": "Ward"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Data",
+   "label": "Town"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-11 09:09:13.624328",
+ "modified_by": "Administrator",
+ "module": "Members",
+ "name": "Local Address",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "address_title"
+}

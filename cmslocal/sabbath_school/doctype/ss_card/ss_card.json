@@ -8,25 +8,25 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "naming_series",
-  "column_break_d5hsr",
   "date_of_issue",
-  "section_break_zzgnc",
-  "bhuduma_yangu_kwa_yesub",
-  "bhuduma_kwa_jamiib",
-  "busomaji_wa_lessoni_na_bibliab"
+  "column_break_xryc",
+  "naming_series",
+  "section_break_iaec",
+  "column_break_ijym",
+  "first_template",
+  "first_template_details",
+  "third_template",
+  "third_template_details",
+  "column_break_gack",
+  "second_template",
+  "second_template_details"
  ],
  "fields": [
   {
-   "default": "0",
    "fieldname": "naming_series",
-   "fieldtype": "Check",
+   "fieldtype": "Select",
    "label": "Naming Series",
-   "options": "SSA-.##.DD.MM.YY.-"
-  },
-  {
-   "fieldname": "column_break_d5hsr",
-   "fieldtype": "Column Break"
+   "options": "SSA-.DD.MM.YY.-"
   },
   {
    "fieldname": "date_of_issue",
@@ -34,31 +34,62 @@
    "label": "Date of Issue"
   },
   {
-   "fieldname": "section_break_zzgnc",
+   "fieldname": "column_break_xryc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iaec",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "bhuduma_yangu_kwa_yesub",
-   "fieldtype": "Table",
-   "label": "<b>Huduma yangu kwa Yesu</b>",
-   "options": "SS Card Description"
+   "fieldname": "first_template",
+   "fieldtype": "Link",
+   "label": "First Template",
+   "options": "SS Card Template"
   },
   {
-   "fieldname": "bhuduma_kwa_jamiib",
-   "fieldtype": "Table",
-   "label": "<b>Huduma kwa Jamii</b>",
-   "options": "SS Card Description"
+   "fieldname": "second_template",
+   "fieldtype": "Link",
+   "label": "Second Template",
+   "options": "SS Card Template"
   },
   {
-   "fieldname": "busomaji_wa_lessoni_na_bibliab",
+   "fieldname": "third_template",
+   "fieldtype": "Link",
+   "label": "Third Template",
+   "options": "SS Card Template"
+  },
+  {
+   "fieldname": "column_break_gack",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_template_details",
    "fieldtype": "Table",
-   "label": "<b>Usomaji wa Lessoni na Biblia</b>",
-   "options": "SS Card Description"
+   "label": "First Template Details",
+   "options": "SS Card Details"
+  },
+  {
+   "depends_on": "eval:doc.second_template === true",
+   "fieldname": "column_break_ijym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "third_template_details",
+   "fieldtype": "Table",
+   "label": "Third Template Details",
+   "options": "SS Card Details"
+  },
+  {
+   "fieldname": "second_template_details",
+   "fieldtype": "Table",
+   "label": "Second Template Details",
+   "options": "SS Card Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-12 07:46:50.780711",
+ "modified": "2024-08-11 13:22:11.731216",
  "modified_by": "Administrator",
  "module": "Sabbath School",
  "name": "SS Card",
